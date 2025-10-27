@@ -169,6 +169,8 @@ public class MediaFinalApp extends Application {
             Alert alerta = new Alert(Alert.AlertType.CONFIRMATION, "Deseja fechar o programa?", ButtonType.YES, ButtonType.NO);
             Optional<ButtonType> botaoPressionado = alerta.showAndWait();
             if(botaoPressionado.get() == ButtonType.YES){
+                Alert alert2 = new Alert(Alert.AlertType.INFORMATION, "Até logo!");
+                alert2.showAndWait();
                 System.exit(0);
             }
 
